@@ -1,0 +1,7 @@
+{
+  "name": "مرافقك الرمضاني",
+  "description": "A beautiful, AI-powered companion for the holy month of Ramadan, featuring daily inspirations, personalized greeting cards, and nutritional meal ideas.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

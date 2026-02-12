@@ -1,0 +1,18 @@
+
+{
+  "name": "Ramadan Companion",
+  "short_name": "Companion",
+  "description": "AI-powered Ramadan guide and greetings.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "https://img.icons8.com/fluency/512/crescent-moon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
