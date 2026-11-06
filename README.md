@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# مرافقك الرمضاني | Ramadan Companion
 
-# Run and deploy your AI Studio app
+تطبيق ويب ثنائي اللغة (العربية والإنجليزية) يضم أدوات ومحتوى يساعد المستخدم على تنظيم بعض جوانب تجربته خلال شهر رمضان.
 
-This contains everything you need to run your app locally.
+## المزايا
 
-View your app in AI Studio: https://ai.studio/apps/drive/1JrybkikPdqDE8ns4Ygy_IztNsXkUvhz9
+- واجهة رئيسية بالعربية والإنجليزية.
+- تأملات وإلهام يومي بمساعدة الذكاء الاصطناعي.
+- قسم لقراءة القرآن الكريم.
+- إنشاء بطاقات تهنئة رمضانية مخصصة.
+- اقتراح وجبات للإفطار والسحور.
+- خدمات مساعدة لتوليد محتوى وصور ذات طابع رمضاني.
 
-## Run Locally
+## التقنيات
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Lucide React
+- Google GenAI SDK
 
+## التشغيل محليًا
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+المتطلبات: Node.js و npm.
+
+```bash
+npm install
+npm run dev
+```
+
+لبناء نسخة الإنتاج:
+
+```bash
+npm run build
+npm run preview
+```
+
+## إعداد الذكاء الاصطناعي والأمان
+
+تعتمد بعض الوظائف على Google Gemini. التنفيذ الحالي يقرأ المفتاح باستخدام `process.env.API_KEY` من كود الواجهة؛ وهذا ليس إعدادًا آمنًا لتطبيق منشور على الويب، لأن مفاتيح API الموجودة في المتصفح يمكن كشفها. لا ترفع المفتاح إلى المستودع، ولا تنشر التطبيق للاستخدام العام قبل نقل طلبات Gemini إلى خادم خلفي آمن وإعداد متغيرات البيئة هناك.
+
+## تنبيه حول المحتوى الديني
+
+المحتوى والتأملات والاقتباسات التي يولدها الذكاء الاصطناعي قد تتضمن أخطاء. تحقّق من نصوص الآيات ومراجع الأحاديث والتفسيرات بالرجوع إلى مصادر موثوقة قبل اعتمادها أو نشرها.
+
+## حالة المشروع
+
+مشروع تجريبي قيد التطوير. لم يُقدَّم على أنه تطبيق ديني مرجعي أو مصدر فتوى.
